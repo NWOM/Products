@@ -2,6 +2,7 @@ package com.cqrs.ProductService.command.api.aggregrate;
 
 import com.cqrs.ProductService.command.api.commands.CreateProductCommand;
 import com.cqrs.ProductService.command.api.events.ProductCreatedEvent;
+import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.eventsourcing.EventSourcingHandler;
 import org.axonframework.modelling.command.AggregateIdentifier;
 import org.axonframework.modelling.command.AggregateLifecycle;
@@ -17,7 +18,7 @@ public class ProductAggregrate {
     private String name;
     private BigDecimal price;
     private Integer quantity;
-
+    @CommandHandler
     public ProductAggregrate(CreateProductCommand createProductCommand) {
            //PERFORM ALL THE VALIDATION
         ProductCreatedEvent productCreatedEvent=new ProductCreatedEvent();
