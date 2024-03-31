@@ -15,6 +15,7 @@ import java.util.UUID;
 public class ProductController {
     private CommandGateway commandGateway;
     public ProductController(CommandGateway commandGateway){
+
         this.commandGateway=commandGateway;
     }
     @PostMapping
