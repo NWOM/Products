@@ -1,7 +1,7 @@
-# ProductSERVICE API
+# ProductService
 
 ## Overview
-ProductSERVICE API is a demonstration of Event Driven Microservices architecture, showcasing the implementation of the CQRS (Command Query Responsibility Segregation) design pattern. Built using Spring Boot and Axon Server, this project provides a robust foundation for developing scalable, resilient, and loosely coupled microservices.
+ProductService API is a demonstration of Event Driven Microservices architecture, showcasing the implementation of the CQRS (Command Query Responsibility Segregation) design pattern. Built using Spring Boot and Axon Server, this project provides a robust foundation for developing scalable, resilient, and loosely coupled microservices.
 
 ## Features
 - **Event Driven Architecture**: Utilizes asynchronous messaging to ensure loose coupling between microservices and improve scalability.
@@ -27,9 +27,10 @@ ProductSERVICE API is a demonstration of Event Driven Microservices architecture
 
 ## Setup
 1. Clone the repository: `git clone <repository-url>`
-2. Navigate to the project directory: `cd ProductSERVICE-API`
+2. Navigate to the project directory: `cd ProductService`
 3. Build the project: `mvn clean install`
 4. Run the application: `java -jar target/ProductSERVICE-API.jar`
+5. If step 4 does not work Download the AxonServer -> move to the directory -> Run `java -jar axonserver.jar` and also run the application parallely
 
 ## Usage
 1. Access the Command Service endpoints for creating, updating, or deleting entities.
